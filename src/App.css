@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+#root {
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+body {
+  background-color: #272727;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+input {
+  @apply border border-white
+}
+
+.selectStyle {
+  @apply mt-3 block w-full appearance-none rounded-lg border-none bg-white/5 px-3 py-1.5 text-sm/6 text-white
+}
+
+.focusStyle {
+  @apply focus:not-data-focus:outline-none data-focus:outline-2 data-focus:-outline-offset-2 data-focus:outline-white/25
+}
+
+.optionStyle {
+  @apply cursor-pointer px-3 py-2 flex items-center gap-2 text-white bg-zinc-700/50;
+}
+
+.inputStyle {
+  @apply mt-3 block w-full rounded-lg border-none bg-white/5 px-3 py-1.5 text-sm/6 text-white
+}
+
+.focustInputStyle {
+  @apply focus:not-data-focus:outline-none data-focus:outline-2 data-focus:-outline-offset-2 data-focus:outline-white/25
+}
+
