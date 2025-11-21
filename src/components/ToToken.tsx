@@ -1,16 +1,16 @@
 import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from "@headlessui/react"
 import type { InputtedValue, SelectedToken, Token } from "../types/token"
-import { ChevronDownIcon, SlashIcon } from "@heroicons/react/20/solid"
+import { ChevronDownIcon } from "@heroicons/react/20/solid"
 import { Fragment, type Dispatch, type SetStateAction } from "react"
 import clsx from "clsx"
 import { useConversion } from "../hooks/useConversion"
 
 interface Props {
-  tokens: Token[]
-  setSelectedToken: Dispatch<SetStateAction<SelectedToken>>
-  setInputtedValue: Dispatch<SetStateAction<InputtedValue>>
-  inputtedValue: InputtedValue
-  selectedToken: SelectedToken
+    tokens: Token[]
+    setSelectedToken: Dispatch<SetStateAction<SelectedToken>>
+    setInputtedValue: Dispatch<SetStateAction<InputtedValue>>
+    inputtedValue: InputtedValue
+    selectedToken: SelectedToken
 }
 
 export default function ToToken(

@@ -6,11 +6,11 @@ import clsx from "clsx"
 import { useConversion } from "../hooks/useConversion"
 
 interface Props {
-  tokens: Token[]
-  setSelectedToken: Dispatch<SetStateAction<SelectedToken>>
-  setInputtedValue: Dispatch<SetStateAction<InputtedValue>>
-  inputtedValue: InputtedValue
-  selectedToken: SelectedToken
+    tokens: Token[]
+    setSelectedToken: Dispatch<SetStateAction<SelectedToken>>
+    setInputtedValue: Dispatch<SetStateAction<InputtedValue>>
+    inputtedValue: InputtedValue
+    selectedToken: SelectedToken
 }
 
 export default function FromToken(
